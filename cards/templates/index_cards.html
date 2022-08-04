@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Flash Card</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+    {% block page_content %}
+    {% for cards in card %}
+
+    <h2>All Cards</h2>
+    <h3>{{ cards.box }} BOX </h3>
+    <article>{{ cards }}</article>
+
+    {% endfor %}
+    {% endblock %}
+</body>
+</html>
